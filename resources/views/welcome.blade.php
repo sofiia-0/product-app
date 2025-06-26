@@ -18,32 +18,32 @@
             background: #fff;
             border-radius: 22px;
             box-shadow: 0 6px 32px #43674122;
-            padding: 3rem 2.2rem 2.2rem 2.2rem;
+            padding: 2.5rem 2rem 2rem 2rem;
             border: 2.5px solid #E1C1C6;
         }
         .app-illustration {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 0; /* No espacio entre sección e h1 */
+            margin-bottom: 1.2rem; /* Más espacio debajo de la ilustración */
         }
         .app-illustration img {
-            width: 160px;
-            height: 160px;
+            width: 140px;
+            height: 140px;
             object-fit: cover;
             border-radius: 18px;
             box-shadow: 0 4px 18px #43674133;
-            margin-bottom: 1rem; /* Espacio entre imagen y descubre */
+            margin-bottom: 0.7rem; /* Espacio entre imagen y descubre */
             background: #E8E2D4;
         }
         .nuevo-producto {
-            font-size: 1.25rem;
+            font-size: 1.18rem;
             font-weight: 700;
             color: #436741;
             background: linear-gradient(90deg, #E1C1C6 0%, #E8E2D4 100%);
-            padding: 0.5rem 1.5rem;
+            padding: 0.45rem 1.2rem;
             border-radius: 16px;
-            margin-bottom: 0.4rem; /* Pequeño espacio con h1 */
+            margin-bottom: 1.1rem; /* Más espacio con h1 */
             letter-spacing: 2px;
             box-shadow: 0 2px 8px #E1C1C655;
             border: 2px solid #436741;
@@ -55,20 +55,22 @@
             color: #E8E2D4;
         }
         h1 {
-            font-size: 2.3rem;
-            margin: 0; /* Sin espacio arriba ni abajo */
+            font-size: 2.1rem;
+            margin: 0 0 1.1rem 0; /* Espacio debajo del h1 */
             font-weight: 700;
             color: #436741;
             letter-spacing: -1px;
+            text-align: center;
         }
         p {
             color: #6b7a5e;
-            margin-bottom: 2.2rem;
+            margin: 0 0 1.7rem 0; /* Menos espacio debajo del párrafo */
             font-size: 1.08rem;
+            text-align: center;
         }
         .btn {
             display: inline-block;
-            padding: .85rem 2rem;
+            padding: .8rem 1.7rem;
             border-radius: 10px;
             background: #436741;
             color: #fff;
@@ -78,6 +80,10 @@
             border: none;
             box-shadow: 0 2px 8px #43674122;
             transition: background .2s, color .2s;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            text-align: center;
         }
         .btn:hover {
             background: #E1C1C6;
@@ -85,9 +91,9 @@
         }
         nav {
             display: flex;
-            gap: 1rem;
+            gap: 0.7rem;
             justify-content: flex-end;
-            margin-bottom: 2.2rem;
+            margin-bottom: 1.5rem; /* Menos espacio debajo del nav */
         }
         .btn-outline {
             background: #fff;
@@ -110,10 +116,17 @@
             margin-top: 2rem;
             text-align: center;
         }
+        .btn-products {
+            display: block;
+            width: 100%;
+            margin: 0 auto 0.7rem auto; /* Menos espacio inferior */
+            text-align: center;
+        }
         @media (max-width: 600px) {
-            .container { padding: 1.2rem; }
-            h1 { font-size: 1.5rem; }
-            .app-illustration img { width: 100px; height: 100px; }
+            .container { padding: 1rem; }
+            h1 { font-size: 1.3rem; }
+            .app-illustration img { width: 90px; height: 90px; }
+            .nuevo-producto { font-size: 1rem; }
         }
     </style>
 </head>
